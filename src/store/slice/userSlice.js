@@ -45,7 +45,7 @@ const userSlice = createSlice({
       localStorage.setItem('userData', JSON.stringify(stateLocalStorage));
     },
     reset() {
-      localStorage('userData');
+      localStorage.removeItem('userData');
       return emptyState;
     },
   },
